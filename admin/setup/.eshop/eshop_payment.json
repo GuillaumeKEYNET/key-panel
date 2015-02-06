@@ -1,0 +1,11 @@
+{
+	"name" : "eshop_payment" ,		"label" : "oyens de Paiement" ,
+	"table" : "eshop_payment" ,		"order" : "orden " ,
+	"sortable" : true ,	"no_add": false,
+	"fields" : [
+		{	"name" : "name" ,				"label" : "Name" ,				"type" : "literal" , 		"db_type" : "varchar(100)", 		"show" : true , 	"placeholder" : "" 	} , 
+		{	"name" : "text" ,				"label" : "text" ,				"type" : "wysiwyg" , 		"db_type" : "text", 				"show" : false		},
+		{	"name" : "illustr" ,			"label" : "Illustration" ,		"type" : "file_img" , 		"db_type" : "varchar(200)", 		"show" : true		},
+		{	"name" : "visible" ,			"label" : "Visible" ,			"type" : "visible" , 		"db_type" : "int", 					"show" : true		}
+	]
+} 

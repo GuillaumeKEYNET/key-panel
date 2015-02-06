@@ -1,0 +1,11 @@
+{
+	"name" : "slideshow" ,		"label" : "slideshow" ,
+	"table" : "slideshow" ,		"order" : "orden " ,
+	"sortable" : true ,	"no_add": false,
+	"fields" : [
+		{	"name" : "title" ,				"label" : "titre" ,					"type" : "literal" , 		"db_type" : "varchar(100)", 			"show" : true , 	"placeholder" : "titre" 	} , 
+		{	"name" : "illustr" ,			"label" : "Illustration" ,			"type" : "file_img" , 		"db_type" : "text", 					"show" : true		},
+		{	"name" : "link" ,				"label" : "link (option)" ,			"type" : "literal" , 			"db_type" : "varchar(200)", 		"show" : true ,		"placeholder" : "URL page ciblée"   },
+		{	"name" : "visible" ,			"label" : "Visible" ,				"type" : "visible" , 		"db_type" : "int", 					"show" : true		}
+	]
+} 

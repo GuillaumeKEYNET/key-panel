@@ -1,0 +1,19 @@
+{
+	"name" : "eshop_order_address" ,		"label" : "ESHOP - ORDER ADDRESS" ,
+	"table" : "eshop_order_address" ,		"order" : "id DESC " , "where" : {} , 
+	"sortable" : false ,	"no_add": false,
+	"fields" : [
+		{	"name" : "civilite" ,				"label" : "civilite " ,		"type" : "literal" , 				"db_type" : "varchar(100)", 					"show" : false		},
+		{	"name" : "nom" ,					"label" : "nom " ,			"type" : "literal" , 				"db_type" : "varchar(300)", 					"show" : true		},
+		{	"name" : "prenom" ,					"label" : "prenom " ,		"type" : "literal" , 				"db_type" : "varchar(300)", 					"show" : true		},
+		{	"name" : "email" ,					"label" : "email " ,		"type" : "literal" , 				"db_type" : "varchar(300)", 					"show" : true		},
+		{	"name" : "tel" ,					"label" : "tel " ,			"type" : "literal" , 				"db_type" : "varchar(300)", 					"show" : false		},
+		{	"name" : "adresse" ,				"label" : "adresse " ,		"type" : "literal" , 				"db_type" : "text", 					"show" : false		},
+		{	"name" : "cp" ,						"label" : "cp " ,			"type" : "literal" , 				"db_type" : "varchar(100)", 					"show" : false		},
+		{	"name" : "ville" ,					"label" : "ville " ,		"type" : "literal" , 				"db_type" : "varchar(100)", 					"show" : true		},
+		{	"name" : "pays" ,					"label" : "pays " ,			"type" : "literal" , 				"db_type" : "varchar(100)", 					"show" : false		},
+		{	"name" : "infos" ,					"label" : "infos " ,		"type" : "textarea" , 				"db_type" : "text", 					"show" : false		}
+	],
+	"child" : "" ,
+	"parent" : "" , "parent_id_field" : "" 
+}

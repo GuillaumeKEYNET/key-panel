@@ -1,0 +1,23 @@
+{
+	"name" : "reference" ,		"label" : "Références" ,
+	"table" : "reference" ,		"order" : "orden " ,
+	"sortable" : true , 		"no_add" : true,
+	"fields" : [
+		{
+			"name" : "title" ,
+			"label" : "Titre" ,
+			"type" : "literal" , 
+			"db_type" : "varchar(100)", 
+			"show" : true
+		} , 
+		{
+			"name" : "link" ,
+			"label" : "link" ,
+			"type" : "literal" , 
+			"db_type" : "varchar(100)", 
+			"show" : true
+		}
+	]
+} 
+
+	

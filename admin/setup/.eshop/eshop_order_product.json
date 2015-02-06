@@ -1,0 +1,17 @@
+{
+	"name" : "eshop_order_product" ,		"label" : "ESHOP - ORDER PRODUCT" ,
+	"table" : "eshop_order_product" ,		"order" : "orden " ,
+	"sortable" : false , "no_add" : true ,
+	"fields" : [
+		{	"name" : "ref" ,				"label" : "Référence" ,			"type" : "disabled" , 		"db_type" : "varchar(100)", 			"show" : true , 	"placeholder" : "Référence du produit" 	} , 
+		{	"name" : "name" ,				"label" : "Nom" ,				"type" : "disabled" , 		"db_type" : "varchar(100)", 			"show" : true , 	"placeholder" : "titre de l'item" 	} , 
+		{	"name" : "quantity" ,			"label" : "quantity" ,			"type" : "disabled" , 		"db_type" : "int", 						"show" : true		}, 
+		{	"name" : "price" ,				"label" : "Prix U. (TTC)" ,		"type" : "disabled" , 		"db_type" : "decimal(10,2)", 			"show" : true		}, 
+		{	"name" : "is_promo" ,			"label" : "en promotion ?" ,	"type" : "disabled" , 		"db_type" : "int", 						"show" : false	 	}, 
+		{	"name" : "weight" ,				"label" : "poids (grammes)" ,	"type" : "disabled" , 		"db_type" : "decimal(10,2)", 			"show" : false		}, 
+		{	"name" : "eshop_order_id" ,		"label" : "eshop_order_id" ,	"type" : "disabled" , 		"db_type" : "int", 						"show" : false		}
+	],
+	"parent" : "eshop_order" , "parent_id_field" : "eshop_order_id" 
+} 
+
+	 

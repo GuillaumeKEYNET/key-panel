@@ -1,0 +1,12 @@
+{
+	"name" : "page" ,		"label" : "Page" ,
+	"table" : "page" ,		"order" : "orden " ,
+	"sortable" : true ,	"no_add": false,
+	"fields" : [
+		{	"name" : "title" ,				"label" : "Titre" ,				"type" : "literal" , 		"db_type" : "varchar(100)", 		"show" : true , 	"placeholder" : "titre" 	} , 
+		{	"name" : "text" ,				"label" : "text" ,				"type" : "wysiwyg" , 		"db_type" : "text", 				"show" : false		},
+		{	"name" : "illustr" ,			"label" : "Illustration" ,		"type" : "file_img" , 		"db_type" : "varchar(200)", 		"show" : true		},
+		{	"name" : "slug" ,				"label" : "URL" ,				"type" : "slug" , 			"db_type" : "varchar(200)", 		"show" : true ,		"slug_reference" : "title"  },
+		{	"name" : "visible" ,			"label" : "Visible" ,			"type" : "visible" , 		"db_type" : "int", 					"show" : true		}
+	]
+} 

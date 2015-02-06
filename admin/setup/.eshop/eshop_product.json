@@ -1,0 +1,29 @@
+{
+	"name" : "eshop_product" ,		"label" : "ESHOP - Produits" ,
+	"table" : "eshop_product" ,		"order" : "orden " ,
+	"sortable" : true ,
+	"fields" : [
+		{	"name" : "ref" ,				"label" : "Référence" ,			"type" : "literal" , 		"db_type" : "varchar(100)", 			"show" : true , 	"placeholder" : "Référence du produit" 	} , 
+		{	"name" : "name" ,				"label" : "Nom" ,				"type" : "literal" , 		"db_type" : "varchar(100)", 			"show" : true , 	"placeholder" : "titre de l'item" 	} , 
+		{	"name" : "eshop_category_id" ,	"label" : "Type" ,				"type" : "combo" , 			"db_type" : "int", 						"show" : true ,		"combo_order" : "orden"  },
+		{	"name" : "price" ,				"label" : "Prix (TTC)" ,		"type" : "number" , 		"db_type" : "decimal(10,2)", 					"show" : true		}, 
+		{	"name" : "promo_price" ,		"label" : "Prix promotion" ,	"type" : "number" , 		"db_type" : "decimal(10,2)", 					"show" : false , 	"style" : "clear col-md-4  "		}, 
+		{	"name" : "is_promo" ,			"label" : "en promotion ?" ,	"type" : "truefalse" , 		"db_type" : "int", 						"show" : false	, 	"style" : "col-md-4  "	}, 
+		{	"name" : "desc" ,				"label" : "Description courte" ,"type" : "textarea" , 		"db_type" : "text", 					"show" : true	, 	"style" : "clear col-md-8  "	}, 
+		{	"name" : "text" ,				"label" : "Texte" ,				"type" : "wysiwyg" , 		"db_type" : "text", 					"show" : false		}, 
+		{	"name" : "details" ,			"label" : "caracteristiques" ,	"type" : "textarea" , 		"db_type" : "text", 					"show" : false		}, 
+		{	"name" : "weight" ,				"label" : "poids (grammes)" ,	"type" : "number" , 		"db_type" : "decimal(10,2)", 						"show" : false		}, 
+		{	"name" : "stock" ,				"label" : "stock" ,				"type" : "number" , 		"db_type" : "int", 						"show" : false		}, 
+		{	"name" : "illustr_01" ,			"label" : "Illustration Principale" ,		"type" : "file_img" , 		"db_type" : "varchar(200)", 			"show" : true		},
+		{	"name" : "illustr_02" ,			"label" : "Illustration 02" ,	"type" : "file_img" , 		"db_type" : "varchar(200)", 			"show" : false		},
+		{	"name" : "illustr_03" ,			"label" : "Illustration 03" ,	"type" : "file_img" , 		"db_type" : "varchar(200)", 			"show" : false		},
+		{	"name" : "illustr_04" ,			"label" : "Illustration 04" ,	"type" : "file_img" , 		"db_type" : "varchar(200)", 			"show" : false		},
+		{	"name" : "slug" ,				"label" : "URL" ,				"type" : "slug" , 			"db_type" : "varchar(200)", 			"show" : false 		,	"slug_reference" : "name"	 },
+		{	"name" : "meta_desc" ,			"label" : "meta_desc" ,			"type" : "literal" , 		"db_type" : "varchar(500)", 			"show" : false 		 },
+		{	"name" : "meta_keywords" ,		"label" : "meta_keywords" ,		"type" : "literal" , 		"db_type" : "varchar(500)", 			"show" : false 		 },
+		{	"name" : "visible" ,			"label" : "Visible" ,			"type" : "visible" , 		"db_type" : "int", 						"show" : true		}
+	],
+	"parent" : "eshop_category" , "parent_id_field" : "eshop_category_id" 
+} 
+
+	 

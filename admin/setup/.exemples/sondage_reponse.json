@@ -1,0 +1,15 @@
+{
+	"name" : "sondage_reponse" ,
+	"label" : "Sondage : Reponses" ,
+	"table" : "sondage_reponse" ,
+	"order" : ["id DESC" ] ,
+	"fields" : [
+		{	"name" : "sondage_question" ,		"label" : "Question" ,		"type" : "combo" , 			"placeholder" : "" , 		"db_type" : "varchar(100)", 		"show" : true		} , 
+		{	"name" : "reponse" ,				"label" : "Réponse" ,		"type" : "literal" , 		"placeholder" : "" , 		"db_type" : "int()", 				"show" : true		},
+		{	"name" : "nom" ,					"label" : "nom" ,			"type" : "literal" , 		"placeholder" : "" , 		"db_type" : "int()", 				"show" : true		}
+	
+	],
+	"parent" : "sondage_question" , "parent_id_field" : "sondage_question" 
+} 
+
+	

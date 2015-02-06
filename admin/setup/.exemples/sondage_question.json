@@ -1,0 +1,13 @@
+{
+	"name" : "sondage_question" ,
+	"label" : "Sondage : Questions" ,
+	"table" : "sondage_question" , "order" : "orden " ,
+	"fields" : [
+		{	"name" : "question" ,		"label" : "Question" ,		"type" : "literal" , 		"placeholder" : "" , 		"db_type" : "varchar(100)", 		"show" : true		} , 
+		{	"name" : "visible" ,		"label" : "visible" ,		"type" : "visible" , 		"placeholder" : "" , 		"db_type" : "int()", 				"show" : true		}
+	
+	] ,
+	"child" : "sondage_reponse" 
+} 
+
+	

@@ -1,0 +1,76 @@
+@font-face {
+	font-family: 'futura';
+	src: url('../fonts/futurastd-book-webfont.woff') format('woff'),
+		 url('../fonts/futurastd-book-webfont.ttf') format('truetype'),
+		 url('../fonts/futurastd-book-webfont.svg#Neutra') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'futura';
+	src: url('../fonts/futurastd-bold-webfont.woff') format('woff'),
+		 url('../fonts/futurastd-bold-webfont.ttf') format('truetype'),
+		 url('../fonts/futurastd-bold-webfont.svg#Neutra') format('svg');
+	font-weight: 700;
+	font-style: normal;
+}
+/*
+@font-face {
+	font-family: 'futuraBold';
+	src: url('../fonts/futurastd-bold-webfont.woff') format('woff'),
+		 url('../fonts/futurastd-bold-webfont.ttf') format('truetype'),
+		 url('../fonts/futurastd-bold-webfont.svg#Neutra') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+*/
+			
+body{ font-family:futura , arial , sansserif ; background: #fff   font-smoothing: antialiased; -webkit-font-smoothing: antialiased; font-smoothing: antialiased; -moz-font-smoothing: antialiased; }
+ul, li{ list-style-type: disc; padding: 0; margin: 0;}
+li{ list-style-type: disc; padding: 0; margin: 0 0 0 10px;}
+a {  color: #000; text-decoration: none;  transition: all 0.5s ease 0s;}
+a:hover{  color: #7cd0cc; text-decoration: none; } 
+a:hover i{  text-decoration: none; }
+ 
+h1{ margin: 0; padding: 0;}
+h2{  margin: 0; padding: 0; font-weight: normal; }
+h3{  margin: 0; padding: 0; font-weight: normal; }
+ 
+body * {  line-height: 1.3; /*-webkit-user-select: none;-khtml-user-select: none;-moz-user-select: none;-o-user-select: none;user-select: none; */}
+.container{ width: 1000px; margin: 0 auto;  }
+
+
+/*** NAV ***/
+#nav{ }
+#nav a{ color: #000; text-decoration: none; text-transform: uppercase; display: inline-block; padding: 5px 10px; font-size: 17px; }
+#nav a:hover, #nav a.active{ color: #7cd0cc;  }
+
+
+
+
+/****************************************************************************
+MOBILE
+*************************************************************************/
+@media screen and (max-width: 640px) {
+ 
+ .w20,.w25,.w30,.w33,.w40,.w45,.w50,.w60,.w66,.w70,.w80,.w90{ width: 100%; }
+.w20m{ width: 20%; }
+.w30m{ width: 30%; }
+.w40m{ width: 40%; }
+.w50m{ width: 50%; }
+.w60m{ width: 60%; }
+.w70m{ width: 70%; }
+.w80m{ width: 80%; }
+.w90m{ width: 90%; }
+.w100m{ width: 100% !important; }
+.hidem{ display: none;  }
+
+.container{ width: 95%; margin: 0 2%;  }
+
+
+
+.txtleftm{ text-align: left; }
+.txtrightm{ text-align: right; }
+
+
+}

@@ -1,0 +1,16 @@
+{
+	"name" : "eshop_category" ,		"label" : "ESHOP - Catégories" ,
+	"table" : "eshop_category" ,		"order" : "orden " ,
+	"sortable" : true ,
+	"fields" : [
+		{	"name" : "name" ,				"label" : "Nom" ,				"type" : "literal" , 		"db_type" : "varchar(100)", 			"show" : true , 	"placeholder" : "titre de l'item" 	} , 
+		{	"name" : "text" ,				"label" : "Texte" ,				"type" : "wysiwyg" , 		"db_type" : "text", 					"show" : false		}, 
+		{	"name" : "slug" ,				"label" : "URL" ,				"type" : "slug" , 			"db_type" : "varchar(200)", 			"show" : false 	,	"slug_reference" : "name"	 },
+		{	"name" : "meta_desc" ,			"label" : "meta_desc" ,			"type" : "literal" , 		"db_type" : "varchar(500)", 			"show" : false 		 },
+		{	"name" : "meta_keywords" ,		"label" : "meta_keywords" ,		"type" : "literal" , 		"db_type" : "varchar(500)", 			"show" : false 		 },
+		{	"name" : "visible" ,			"label" : "Visible" ,			"type" : "visible" , 		"db_type" : "int", 						"show" : true		}
+	],
+	"child" : "eshop_product" 
+} 
+
+	 

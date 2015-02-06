@@ -1,0 +1,16 @@
+{
+	"name" : "project" ,		"label" : "Projets" ,
+	"table" : "project" ,		"order" : "orden " ,
+	"sortable" : true ,
+	"fields" : [
+		{	"name" : "title_fr" ,			"label" : "title" ,				"type" : "literal" , 		"db_type" : "varchar(100)", 			"show" : true , 	"placeholder" : "titre de l'item" 	} , 
+		{	"name" : "text_fr" ,			"label" : "Texte" ,				"type" : "wysiwyg" , 		"db_type" : "text", 					"show" : true		}, 
+		{	"name" : "illustr_01" ,			"label" : "Illustration" ,		"type" : "file_img" , 		"db_type" : "varchar(200)", 			"show" : true		},
+		{	"name" : "illustr_02" ,			"label" : "Illustration 02" ,	"type" : "file_img" , 		"db_type" : "varchar(200)", 			"show" : true		},
+		{	"name" : "project_type_id" ,	"label" : "Type" ,				"type" : "combo" , 			"db_type" : "int", 						"show" : true ,		"combo_order" : "orden"  },
+		{	"name" : "visible" ,			"label" : "Visible" ,			"type" : "visible" , 		"db_type" : "int", 						"show" : true		},
+		{	"name" : "text_en" ,			"label" : "Texte EN" ,			"type" : "textarea" , 		"db_type" : "text", 					"show" : false		}
+	]
+} 
+
+	

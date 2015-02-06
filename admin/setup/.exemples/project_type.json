@@ -1,0 +1,11 @@
+{
+	"name" : "project_type" ,			"label" : "Types de Projets" ,
+	"table" : "project_type" ,			"order" : "orden " ,
+	"sortable" : true ,
+	"fields" : [
+		{	"name" : "title_fr" ,		"label" : "title FR" ,		"type" : "literal" , 		"db_type" : "varchar(100)", 	"show" : true , 	"placeholder" : "" 	} , 
+		{	"name" : "title_en" ,		"label" : "title EN" ,		"type" : "literal" , 		"db_type" : "varchar(100)", 	"show" : true , 	"placeholder" : "" 	} 
+	]
+} 
+
+	

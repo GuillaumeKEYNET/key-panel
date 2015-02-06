@@ -1,0 +1,23 @@
+{
+	"name" : "eshop_order" ,		"label" : "COMMANDES" ,
+	"table" : "eshop_order" ,		"order" : "id DESC " , "where" : {"archived[!]":"1"} , 
+	"sortable" : false ,	"no_add": true,
+	"fields" : [
+		{	"name" : "reference" ,				"label" : "reference" ,				"type" : "disabled" , 				"db_type" : "varchar(100)", 			"show" : true  	 	, "style" : "clear col-md-4  "	}, 
+		{	"name" : "status" ,					"label" : "status " ,				"type" : "eshop_status" , 			"db_type" : "varchar(100)", 			"show" : true		, "style" : " col-md-4  "		}, 
+		{	"name" : "date" ,					"label" : "date" ,					"type" : "disabled" , 				"db_type" : "varchar(100)", 			"show" : true		, "style" : "clear col-md-4  "		}, 
+		{	"name" : "total" ,					"label" : "total" ,					"type" : "eshop_total" , 			"db_type" : "varchar(100)", 			"show" : true		, "style" : " col-md-4  "		}, 
+		{	"name" : "products" ,				"label" : "products" ,				"type" : "eshop_html" , 			"db_type" : "varchar(200)", 			"show" : false		, "style" : "clear col-md-4  "		}, 
+		{	"name" : "total_cart" ,				"label" : "total_cart" ,			"type" : "disabled" , 				"db_type" : "varchar(200)", 			"show" : false		, "style" : " col-md-4  "	},
+		{	"name" : "eshop_carrier_id" ,		"label" : "livraison" ,				"type" : "combo_disabled" , 		"db_type" : "varchar(100)", 			"show" : false		, "style" : "clear col-md-4  "		}, 
+		{	"name" : "total_carrier" ,			"label" : "total_carrier" ,			"type" : "disabled" , 				"db_type" : "varchar(200)", 			"show" : false		, "style" : " col-md-4  "		}, 
+		{	"name" : "client_name" ,			"label" : "client" ,				"type" : "disabled" , 				"db_type" : "varchar(200)", 			"show" : true		, "style" : "clear col-md-4  "		}, 
+		{	"name" : "client_email" ,			"label" : "email " ,				"type" : "disabled" , 				"db_type" : "varchar(200)", 			"show" : false		, "style" : " col-md-4  "		}, 
+		{	"name" : "address_facturation_id" ,	"label" : "Adresse facturation" ,	"type" : "eshop_address" , 			"db_type" : "int", 						"show" : false		, "style" : "clear col-md-4  "		}, 
+		{	"name" : "address_livraison_id" ,	"label" : "Adresse livraison" ,		"type" : "eshop_address" , 			"db_type" : "int", 						"show" : false		, "style" : " col-md-4  "		}, 
+		{	"name" : "eshop_payment_id" ,		"label" : "Paiement" ,				"type" : "combo_disabled" , 		"db_type" : "varchar(100)", 			"show" : false		, "style" : "clear col-md-4  "		}, 
+		{	"name" : "payment_code" ,			"label" : "Paiment CODE " ,			"type" : "disabled" , 				"db_type" : "varchar(500)", 			"show" : false		, "style" : " col-md-4  "		}, 
+		{	"name" : "archived" ,				"label" : "archived" ,				"type" : "visible" , 				"db_type" : "int", 						"show" : false		}
+	],
+	"child" : "eshop_order_product" 
+}

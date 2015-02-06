@@ -1,0 +1,23 @@
+[
+	{	"text" : "Dashboard" ,		"icon" : "fa-bar-chart" ,			"url" : "/dashboard"	},
+	{			},
+	{	"text" : "SlideShow" ,		"icon" : "fa-camera-retro" ,			"url" : "/show/slideshow"	},
+	{	"text" : "Pages" ,			"icon" : "fa-book" ,			"url" : "/show/page"		},
+	{			},
+	{	
+		"text" : "Eshop" ,		"icon" : "fa-money" ,			"url" : "" ,
+		"items" : [
+			{	"text" : "Commandes" ,				"icon" : "fa-shopping-cart " ,		"url" : "/show/eshop_order"		},
+			{	"text" : "<i>Commandes archivées</i>" ,	"icon" : "" ,		"url" : "/show/eshop_order_archived"		},
+			{			},
+			{	"text" : "Produits" ,			"icon" : "fa-image " ,		"url" : "/show/eshop_product"		} ,
+			{	"text" : "Categories" ,			"icon" : "fa-bolt " ,		"url" : "/show/eshop_category"		},
+			{			},
+			{	"text" : "Moyens de paiement" ,			"icon" : "fa-cc-visa" ,		"url" : "/show/eshop_payment"		},
+			{	"text" : "Transporteurs" ,				"icon" : "fa-bus" ,		"url" : "/show/eshop_carrier"		}
+		]
+	}
+
+]
+
+	
