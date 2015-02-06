@@ -1,2 +1,4 @@
-# key-panel
-Admin Panel on SlimPhp
+# KEY-panel
+Admin Panel on SlimPhp by KEYNET
+
+Eshop exemple included
