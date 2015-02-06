@@ -104,24 +104,9 @@
 		<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  -->
 		<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  -->
 		<!-- TINYMCE WYSIWYG  -->
+		<link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
 		<script src="<?= URL ?>/assets/js/tinymce/tinymce.min.js"></script>
-		<script>
-			$(function() {
-				$('textarea.tinymce').tinymce({
-					plugins: 'textcolor,media,code,image,link',
-					theme : "modern",
-					content_css : "<?= URL ?>/assets/js/tinymce/content.css?" + new Date().getTime(),
-					height: "300",
-					relative_urls: false,
-					menubar : false , 
-					statusbar: false,
-						// toolbar: [ "styleselect forecolor backcolor bullist | bold italic | link unlink media image | alignleft aligncenter alignright | code " ]
-					toolbar: [ "alignleft aligncenter alignright | bold italic | forecolor backcolor bullist | link unlink media image | code removeformat  " ] ,
-					file_browser_callback: custom_file_browse ,
-					
-				});
-			});
-		</script>
+		<script src="<?= URL ?>/assets/js/tinymce.init.js"></script>
 		
 		<!-- CUSTOM FILE UPLOADER  -->
 		<script>
@@ -172,6 +157,7 @@
 				{
 					$.post( "<?= URL ?>/update-field/<?= $table['table'] ?>/<?= $item['id'] ?>?"+fieldName+"=" );
 					$.get( "<?= URL ?>/remove-image?file_img="+fileName );
+					$.get( "<?= URL ?>/remove-file?file_file="+fileName );
 					$('#'+fieldName+"_div").remove();
 					$('#'+fieldName).slideDown().css('display','block');
 					fieldName.value="";
