@@ -29,7 +29,8 @@ final class combo extends field{
 			$field_value = '' ;
 			foreach( $item as $key => $field )
 			{
-				if (is_string($field) and $field != '0' and intval($field) == 0 ) 
+				// if (is_string($field) and $field != '0' and intval($field) == 0 ) 
+				if ( is_string($field) && $key != 'id' && $key != 'orden' ) 
 				{
 					$field_value = $field;
 					break;
