@@ -1,9 +1,9 @@
 <?php
 
-define('APP_NAME', "MOTMOT BIJOUX - Admin");
-define('APP_LOGO', "../assets/images/logo_motmot_white.png");
-define('APP_URL', "http://www.motmotbijoux.com" );
-define('APP_SECRET', "motmotbijoux");
+define('APP_NAME', "Admin");
+define('APP_LOGO', "");
+define('APP_URL', "http://xxxxxxxxxxxxxxxx" );
+define('APP_SECRET', "xxxxxxxxxxxxxxxx");
 define('APP_DEFAULT', "/dashboard");
 
 //***********************************************************
@@ -21,10 +21,10 @@ define('RELATIVE_PATH', __DIR__ );
 //DATABASE
 $app->database = new medoo( array(
 	'database_type' => 'mysql',
-	'database_name' => 'motmotbiucbdd',
-	'server' => 'mysql51-160.bdb',
-	'username' => 'motmotbiucbdd',
-	'password' => 'motmotPass12',
+	'database_name' => 'xxxxxxxxxxxxxxxx',
+	'server' => 'xxxxxxxxxxxxxxxx',
+	'username' => 'xxxxxxxxxxxxxxxx',
+	'password' => 'xxxxxxxxxxxxxxxx',
 ));
 
 //***********************************************************

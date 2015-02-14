@@ -2,8 +2,7 @@
 
 //------------------------------------------------
 //DEFINE PATH for images
-// define('URL', "http://motmotbiuc.cluster007.ovh.net");
-define('URL', "http://www.motmotbijoux.com");
+define('URL', "http://xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx");
 define('IMGPATH', URL."/data/img");
 define('ASSETS', URL."/assets");
 
@@ -11,16 +10,16 @@ define('ASSETS', URL."/assets");
 // set up database connection
 $app->database = new medoo( array(
 	'database_type' => 'mysql',
-	'database_name' => 'motmotbiucbdd',
-	'server' => 'mysql51-160.bdb',
-	'username' => 'motmotbiucbdd',
-	'password' => 'motmotPass12',
+	'database_name' => 'xxxxxxxxxxxxxxxx',
+	'server' => 'xxxxxxxxxxxxxxxx',
+	'username' => 'xxxxxxxxxxxxxxxx',
+	'password' => 'xxxxxxxxxxxxxxxx',
 )); 
 
 //------------------------------------------------
 //ESHOP CONFIG
-define( 'ESHOP_MAILTO' , 'hello@motmotbijoux.com ; dev@keynet.fr' );
-define( 'ESHOP_MAILFROM' , 'hello@motmotbijoux.com' );
+define( 'ESHOP_MAILTO' , 'xxxxxxxxxxxxxxxx' );
+define( 'ESHOP_MAILFROM' , 'xxxxxxxxxxxxxxxx' );
 
 //------------------------------------------------
 //PAYPAL CONFIG
@@ -28,7 +27,7 @@ define( 'ESHOP_MAILFROM' , 'hello@motmotbijoux.com' );
 $app->paypal = new stdClass();
 
 // /* Mode PROD */
-$app->paypal->compte = 'hello@motmotbijoux.com';
+$app->paypal->compte = 'xxxxxxxxxxxxxxxx';
 $app->paypal->devise        = "EUR";
 $app->paypal->code_langue   = "FR";
 $app->paypal->serveur = "https://www.paypal.com/cgi-bin/webscr";
@@ -42,7 +41,7 @@ $app->paypal->port   = 443 ;
 // $app->paypal->ipn_serveur   = "ssl://www.sandbox.paypal.com/cgi-bin/webscr";
 // $app->paypal->port   = 443 ;
 
-$app->paypal->url_confirm = URL."/paypal/confirmation/m07m0781j0ux";
+$app->paypal->url_confirm = URL."/paypal/confirmation/xxxxxxxxxxxxxxxx";
 $app->paypal->url_thanks = URL."/checkout/merci";
 $app->paypal->url_error = URL."/checkout/erreur";
 //------------------------------------------------
@@ -51,9 +50,9 @@ $app->paypal->url_error = URL."/checkout/erreur";
 $app->paybox = new stdClass();
 
 /* Mode PROD */
-$app->paybox->site = '1266343';
-$app->paybox->rang = '01';
-$app->paybox->id = '253939310';
+$app->paybox->site = 'xxxxxxxxxxxxxxxx';
+$app->paybox->rang = 'xxxxxxxxxxxxxxxx';
+$app->paybox->id = 'xxxxxxxxxxxxxxxx';
 $app->paybox->public_key = "" ; 
 // /* Mode sandbox */
 // $app->paybox->site = '1999888';
@@ -62,7 +61,7 @@ $app->paybox->public_key = "" ;
 // $app->paybox->id = '03';
 // $app->paybox->public_key = "" ; 
 
-$app->paybox->url_confirm = URL."/paybox/confirmation/m07m0781j0ux";
+$app->paybox->url_confirm = URL."/paybox/confirmation/xxxxxxxxxxxxxxxx";
 $app->paybox->url_thanks = URL."/checkout/merci";
 $app->paybox->url_error = URL."/checkout/erreur";
 $app->paybox->ip_ipn = array('194.2.122.158' , '195.25.7.166') ; 
