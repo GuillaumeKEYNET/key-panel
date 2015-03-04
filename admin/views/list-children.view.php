@@ -95,6 +95,40 @@
                      
 				</div>
 			</div>
+				
+				<script>
+				$(document).ready(function() {
+					$('#sortable').sortable({ 
+						cursor: "move",
+						forcePlaceholderSize: true ,
+						// handle: ".handle" , 
+						cursorAt: { left: 25 , top: 25 } ,
+						update : function(){
+							$('#sortable').children().each( function(){
+								$.post( "<?= URL ?>/update-field/<?= $table_child['table'] ?>/"+$(this).data('id'), { orden: $(this).index() } );
+							});
+							
+						}
+					});
+					
+					$('.delete_link').click( function(e){
+						
+						if( confirm('Confirm delete') )
+						{
+							$.get( $(this).attr('href') );
+							$(this).parent().parent().fadeOut( 1000 , function() { $(this).remove(); } );
+						}
+						e.preventDefault();
+						return false;
+						
+						
+					});
+					
+				});
+				</script>
+			
+			
+			
 			
 			<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  -->
 			<?php /* END IF TABLE CHILD?  */ endif; ?>	
