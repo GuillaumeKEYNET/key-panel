@@ -13,7 +13,9 @@
             <div class="col-md-4 col-md-offset-4">
                 <div class="login-panel panel panel-default">
                     <div class="panel-heading">
-                        <h3 class="panel-title">Please Sign In</h3>
+                        <a href="<?= APP_URL ?>">
+							<img src="<?= APP_URL ?>/<?= APP_LOGO ?>" alt="Divines.fr" />
+						</a>
                     </div>
                     <div class="panel-body">
                         <form role="form" method="post" action="<?= URL ?>/connexion">

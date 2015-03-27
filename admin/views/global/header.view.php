@@ -10,7 +10,7 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="<?= URL ?>">
-					<img src="<?= URL ?>/<?= APP_LOGO ?>" alt="<?= APP_NAME ?>" />
+					<?= APP_NAME ?>
 				</a>
             </div>
             <!-- /.navbar-header -->

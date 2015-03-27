@@ -19,6 +19,7 @@
 .kright{ float: right;}
 
 .navbar-default{ background: #111; color: #fff;  }
+.navbar-brand{ border: 2px solid #eee; padding: 7px 10px; display: block; height: auto; margin: 5px 10px; color: #eee !important; }
 #side-menu{ background: #f8f8f8; color: #111; }
 
 #page-wrapper{ /*box-shadow: 0px 0px 12px 0px #555;*/  }
