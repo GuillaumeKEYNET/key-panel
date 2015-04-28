@@ -14,7 +14,7 @@ $app = new \Slim\Slim(array(
 ));
 
 //INIT SESSIONS & COOKIES
-$app->add(new \Slim\Middleware\SessionCookie);
+$app->add(new \Slim\Middleware\SessionCookie(array('expires' => '120 minutes')));
 $app->add(new \Slim\Middleware\Flash);
 //******************************************************************************
 //GET CONFIG
