@@ -3,7 +3,7 @@ tinymce.PluginManager.add("fullscreen",function(a){function b(){var a,b,c=window
 
 $(function() {
 				$('textarea.tinymce').tinymce({
-					plugins: 'textcolor,media,code,image,link',
+					plugins: 'textcolor,media,code,image,link,fullscreen',
 					theme : "modern",
 					content_css : ["<?= URL ?>/assets/js/tinymce/content.css?" + new Date().getTime() , "http://fonts.googleapis.com/css?family=Pacifico" ] ,
 					height: "300",

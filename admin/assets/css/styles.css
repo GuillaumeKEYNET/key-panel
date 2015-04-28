@@ -17,6 +17,7 @@
 .clear{ clear: both; }
 .kleft{ float: left; }
 .kright{ float: right;}
+.mce-fullscreen{ z-index: 9000 !important;} 
 
 .navbar-default{ background: #111; color: #fff;  }
 .navbar-brand{ border: 2px solid #eee; padding: 7px 10px; display: block; height: auto; margin: 5px 10px; color: #eee !important; }
