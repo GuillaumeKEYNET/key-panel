@@ -14,7 +14,7 @@ require '../Slim/lib/medoo.min.php';
 $app = new \Slim\Slim(array(
     'templates.path' => './views' 
 ));
-$app->add(new \Slim\Middleware\SessionCookie);
+$app->add(new \Slim\Middleware\SessionCookie(array('expires' => '120 minutes')));
 $app->add(new \Slim\Middleware\Flash);
 //******************************************************************************
 require 'config.php';

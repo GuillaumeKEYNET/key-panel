@@ -1,6 +1,7 @@
 {
 	"name" : "page" ,		"label" : "Page" ,
 	"table" : "page" ,		"order" : "orden " ,
+	"bdd_action" : "create" , 
 	"sortable" : true ,	"no_add": false,
 	"fields" : [
 		{	"name" : "title" ,				"label" : "Titre" ,				"type" : "literal" , 		"db_type" : "varchar(100)", 		"show" : true , 	"placeholder" : "titre" 	} , 

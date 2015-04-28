@@ -14,7 +14,7 @@
                 <div class="login-panel panel panel-default">
                     <div class="panel-heading">
                         <a href="<?= APP_URL ?>">
-							<img src="<?= APP_URL ?>/<?= APP_LOGO ?>" alt="Divines.fr" />
+							<img src="<?= APP_URL ?>/<?= APP_LOGO ?>" alt="<?= APP_NAME ?>" />
 						</a>
                     </div>
                     <div class="panel-body">
